@@ -1,0 +1,28 @@
+﻿@model Phim
+<form asp-action="Update" method="post">
+    <input type="hidden" asp-for="Id" />
+    <h2>Cap nhat thong tin Phim</h2>
+    <hr />
+    <div class="form-group">
+        <label>Tua De</label>
+        <input asp-for="TuaDe" class="form-control" />
+        <span asp-validation-for="TuaDe" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Dien vien</label>
+        <input asp-for="DienVien" class="form-control" />
+        <span asp-validation-for="DienVien" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Thoi luong</label>
+        <input asp-for="ThoiLuong" class="form-control" />
+        <span asp-validation-for="ThoiLuong" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Gia ve</label>
+        <input asp-for="GiaVe" class="form-control" />
+        <span asp-validation-for="GiaVe" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary"> Update </button>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</form>

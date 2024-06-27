@@ -1,0 +1,32 @@
+﻿@model Phim
+
+<form asp-action="Add" method="post">
+    <h2>Them Sach Moi</h2>
+    <hr />
+    <div class="form-group">
+        <label>Tua De</label>
+
+        <input asp-for="TuaDe" class="form-control" />
+        <span asp-validation-for="TuaDe" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Dien Vien</label>
+        <input asp-for="DienVien" class="form-control" />
+        <span asp-validation-for="DienVien" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>The loai</label>
+
+        <input asp-for="ThoiLuong" class="form-control" />
+        <span asp-validation-for="TrongNuoc " class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Gia Ve</label>
+
+        <input asp-for="GiaVe" class="form-control" />
+        <span asp-validation-for="GiaVe" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary"> Save </button>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</form>
